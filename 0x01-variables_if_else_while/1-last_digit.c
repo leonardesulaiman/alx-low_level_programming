@@ -7,7 +7,7 @@
  * number stored in tthe variable n
  * Return: Always 0 (Sussess)
  */
-int main (void)
+int main(void)
 {	
 	int n;
 
