@@ -15,7 +15,10 @@ int main(void)
 	while (i < 48)
 	{
 		i = 48;
-		while (e != i && e < i)
+		while(i < 58)
+
+		 {
+		if (e != i && e < i)
 		{	
 			
 			putcher(e);
