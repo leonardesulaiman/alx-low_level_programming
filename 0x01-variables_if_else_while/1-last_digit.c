@@ -8,7 +8,7 @@
  * Return: Always 0 (Sussess)
  */
 int main(void)
-{	
+{
 	int n, lastd;
 
 	srand(time(0));
