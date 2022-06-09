@@ -3,7 +3,6 @@
 /** main - prints putchar
  * Returrn: always 0
  */
-
 int main(void)
 {
 	_putchar('_');
