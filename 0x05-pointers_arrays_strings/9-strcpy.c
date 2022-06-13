@@ -1,25 +1,22 @@
 #include <stdio.h>
 
 /*
- * main - causes an infinite loop
- * Return: 0
+ *_strcpy - Copies a string pointed to by @src, including the
+ *	terminating null byte,to a buffer pointed to by @dest.
+ *	@dest Abuffer to copy the string to 
+ *	@src: the source string to copy 
+ *
+ *Return: A pointer to the destion string @dest
  */
-
-int main(void)
+char *_strcpy(char *dest, char *src)
 {
-	int i;
+	int index = 0;
 
-	printf("Infinite loop incoming :(\n");
-
-	i = 0;
-
-/**
- *  while (i < 10)
- *  {
- *	putchar(i);
- *  }
- */
-	printf("Infinite loop avoided! \\o/\n");
-
-	return (0);
+	while (src[index])
+	{
+		dest[index] = src[index];
+		index++;	
+	
+	}
+	return (dest);
 }
