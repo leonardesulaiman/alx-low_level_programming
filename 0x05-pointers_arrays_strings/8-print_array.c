@@ -1,4 +1,5 @@
 #include "leonard.h"
+#include <stdio.h>
 
 /**
  * print_array - check the code for Holberton School students.
@@ -13,6 +14,7 @@ int i, inte;
 
 for (i = 0; i < n; i++)
 {
+
 inte = *(a + i);
 
 printf("%d", inte);
@@ -20,5 +22,6 @@ printf("%d", inte);
 if (i != n - 1)
 printf(", ");
 }
+
 printf("\n");
 }
