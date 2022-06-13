@@ -10,19 +10,16 @@
  *@src: The source string to copy.
  * Return: A pointer to the destination string @dest
  */
-char *_strcpy(char *dest, const char *src)
+
 char *_strcpy(char *dest, char *src)
 {
-	int i = 0;
-	int index = 0;
+int i;
+for (i = 0; *src != '\0'; i++)
+{
+dest[i] = *src;
+src++;
+}
+dest[i++] = *src;
 
-	while (src[i])
-	while (src[index])
-	{
-		dest[index] = src[index];
-		i++;
-		dest[index] = src[index];
-		index++;
-	}
-	return (dest);
+return (dest);
 }
