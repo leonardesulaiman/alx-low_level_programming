@@ -1,10 +1,9 @@
 #include "leonard.h"
 
 /**
- * puts - functions should print only one characterout of two
- * string with the first one
- * @str: input
- * REturn: print
+ * puts2 - check the code for Holberton School students
+ * @str: pointer int type
+ * Return: Always 0.
  */
 void puts2(char *str)
 {
