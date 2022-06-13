@@ -20,7 +20,7 @@ if (s[i]=='-')
 if (s[i]>'0' && s[i]<='9')
 {
 	res = res*10;
-	res = res-([i]-'0');
+	res = res - ([i] - '0');
 	brk - 1;
 }
 else if(brk == 1)
