@@ -1,22 +1,35 @@
 #include "leonard.h"
 
+/**
+ * cap_string - a function that capitalizes all words of a string
+ * @n: input string
+ * Return: caps on first letter of a separator
+ */
+
+char *cap_string(char *n)
 {
-int symb[14] = {' ', '\t', '\n', ',', ';', '.', '!','?', '"', '(', ')', '{', '}'};
+int i, x;
+int cap = 32;
+int separators[] = {',', ';', '.', '?', '"','(', ')', '{', '}', ' ', '\n', '\t'};
 
-int i, j;
+for (i = 0; n[i] != '\0'; i++)
+{
+if (n[i] >= 'a' && n[i] <= 'z')
+{
+n[i] = n[i] - cap;
+}
 
-for (i = 0; str[i] != '\0'; i++)
+cap = 0;
+
+for (x = 0; x <= 12; x++)
 
 {
-if (str[0] >= 97 && str[0] <= 122)
+if (n[i] == separators[x])
 {
-str[0] = str[0] - 32;
+x = 12;
+cap = 32;
 }
-for (j = 0; j < 14; j++)
-
-if (str[i] >= 97 && str[i] <= 122 && str[i - 1] == symb[j])
-str[i] = str[i] - 32;
 }
-return (str);
 }
-
+return (n);
+}
