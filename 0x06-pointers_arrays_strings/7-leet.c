@@ -1,4 +1,5 @@
 #include "leonard.h"
+
 /**
  * leet - a function that encodes a string into 1337.
  * @s: string to be crypted .
@@ -12,6 +13,7 @@
 char *leet(char *n)
 {
 int i, x;
+
 int find[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
 int replacer[] = {'4', '3', '0', '7', '1'};
 
