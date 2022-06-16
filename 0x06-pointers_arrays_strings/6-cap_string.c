@@ -1,5 +1,4 @@
 #include "leonard.h"
-#include <stdio.h>
 
 /**
  * cap_string - ...
@@ -12,6 +11,7 @@
 char *cap_string(char *n)
 {
 int i, x;
+
 int cap = 32;
 int separators[] = {',', ';', '.', '?', '"','(', ')', '{', '}', ' ', '\n', '\t'};
 
